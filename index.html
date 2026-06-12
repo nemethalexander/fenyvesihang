@@ -1,21 +1,40 @@
 <!doctype html>
 <html lang="hu">
   <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com; media-src 'self'; frame-src https://www.youtube-nocookie.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="theme-color" content="#0E0D0B" />
     <link rel="icon" type="image/png" href="/fenyvesihang/assets/logo/fenyvesihanghu_logo_fb_profil_feher.png?v=3" />
     <link rel="apple-touch-icon" href="/fenyvesihang/assets/logo/fenyvesihanghu_logo_fb_profil_feher.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0E0D0B" />
+
     <title>Fenyvesi Hang — Műsorvezető és Narrátor · Fenyvesi Zoltán</title>
     <meta name="description" content="Fenyvesi Zoltán — professzionális műsorvezető és narrátor. Nagyszínpadi rendezvények, fesztiválok, díjátadók, rádió és podcast, reklám- és dokumentumfilm narráció." />
+    <link rel="canonical" href="https://fenyvesihang.hu/" />
+
+    <!-- Open Graph / Twitter — static so crawlers (which don't run JS) can read them. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Fenyvesi Hang" />
+    <meta property="og:title" content="Fenyvesi Hang — Műsorvezető és Narrátor · Fenyvesi Zoltán" />
+    <meta property="og:description" content="Fenyvesi Zoltán — professzionális műsorvezető és narrátor. Nagyszínpadi rendezvények, fesztiválok, díjátadók, rádió és podcast, reklám- és dokumentumfilm narráció." />
+    <meta property="og:url" content="https://fenyvesihang.hu/" />
+    <meta property="og:image" content="https://fenyvesihang.hu/assets/hero-poster-1920w.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:locale" content="hu_HU" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Loaded as print media so it doesn't block first paint; main.tsx flips it
+         to "all" once the bundle runs (CSP-safe — no inline event handler). -->
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
       media="print"
-      onload="this.media='all'"
+      data-deferred-style
     />
     <noscript>
       <link
@@ -33,13 +52,13 @@
       type="image/webp"
       fetchpriority="high"
     />
-    <script type="module" crossorigin src="/fenyvesihang/assets/index-DWled1_o.js"></script>
+    <script type="module" crossorigin src="/fenyvesihang/assets/index-BKAge1WW.js"></script>
     <link rel="modulepreload" crossorigin href="/fenyvesihang/assets/helmet-vendor-Cpdqss0N.js">
-    <link rel="modulepreload" crossorigin href="/fenyvesihang/assets/motion-vendor-BlVTL_A8.js">
+    <link rel="modulepreload" crossorigin href="/fenyvesihang/assets/motion-vendor-KkB-h56A.js">
     <link rel="modulepreload" crossorigin href="/fenyvesihang/assets/react-vendor-SK3gO-vb.js">
     <link rel="modulepreload" crossorigin href="/fenyvesihang/assets/i18n-vendor-BYYqfHXw.js">
     <link rel="modulepreload" crossorigin href="/fenyvesihang/assets/icons-vendor-CwNxjd-v.js">
-    <link rel="stylesheet" crossorigin href="/fenyvesihang/assets/index-B7ELLiag.css">
+    <link rel="stylesheet" crossorigin href="/fenyvesihang/assets/index-Dr9Hq7hi.css">
   </head>
   <body class="bg-ink-900 text-cream antialiased">
     <div id="root"></div>
